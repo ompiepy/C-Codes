@@ -1,0 +1,20 @@
+Title:
+Get input of your name, address, age in years, weight and height from keyboard and display the information using unformatted I/O (String I/O).
+
+Problem Analysis:
+The problem is to get the input for various parameters like name, address, afe, weight and height and display them using unformatted IO in C. Now, we don't have built in support for sting data type in C. So, we have to uses array of characters to make an string.So, we declare variables for storing name as name[30] which denotes it can store upto 29 characters plus one NULL character, address as address[50] which denotes it can store upto 49 characters puls one NULL character. The NULL character is written automatically at the end of the memory allocated to the char data type, which indicated the end of the string. Now, we are compelled to store the numbers as string, since, we cannot output the numbers using Unformatted IO. So, we used age[3] to store 2 digit age plus a NULL character, weight[3] to store 2 digit weight plus a NULL character, height_ft[2] to store single digit height in ft plus a NULL character and height_inch[3] to store two digit height in inch plus a NULL character. We are skipping input Validation for the sake of simplicity.
+
+The function puts(<string>) takes argument string and displays on the console. The function gets(<variable>) asks the input from the user and store the data in the variable given in its agrument. The function fssek(stdin, 0, SEEK_END) is used to clear the buffer so as to avoid skipping the next gets() function. The putchar() function is used to disply an character in the console.
+
+Algorithm:
+1. Start
+2. Define variables for name, address, age, weight, height_ft and height_inch.
+3. Assign values to variables name, address, age, weight, height_ft and height_inch.
+4. Display the values stored in these variables.
+5. Stop.
+
+Flowchart:
+https://lucid.app/lucidchart/invitations/accept/inv_567d93e5-228e-4153-a3d3-bd5d5ab4f18a?viewport_loc=-95%2C-127%2C1518%2C651%2C0_0
+
+Discussion and Conclusion:
+We use the function of unformatted IO to solve this problem.
